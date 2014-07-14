@@ -7,3 +7,4 @@ From [dockerfile/ansible](https://github.com/dockerfile/ansible)
 **Installed modules**:
 
 - python boto
+- aws cli
