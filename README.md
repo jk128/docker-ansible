@@ -8,3 +8,4 @@ From [dockerfile/ansible](https://github.com/dockerfile/ansible)
 
 - python boto
 - aws cli
+- python apache-libcloud
