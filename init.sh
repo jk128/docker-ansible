@@ -10,6 +10,7 @@ ssh_setup() {
   cat > /root/.ssh/config <<CONF
   Host *
     StrictHostKeyChecking no
+    UserKnownHostsFile=/dev/null
 CONF
   chmod 600 /root/.ssh/config
   echo "DONE."
