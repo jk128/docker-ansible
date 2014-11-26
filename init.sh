@@ -12,7 +12,7 @@ ssh_setup() {
     StrictHostKeyChecking no
     UserKnownHostsFile=/dev/null
 CONF
-  chmod 600 /root/.ssh/config
+  chmod 700 /root/.ssh/config
   echo "DONE."
 }
 
