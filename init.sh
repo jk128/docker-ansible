@@ -7,6 +7,11 @@ ssh_setup() {
   chmod 700 /root/.ssh
   echo "$SSH_PRIVATE_KEY"|base64 -d> /root/.ssh/id_rsa
   chmod 600 /root/.ssh/id_rsa
+  cat > /root/.ssh/config <<CONF
+  Host *
+    StrictHostKeyChecking no
+CONF
+  chmod 600 /root/.ssh/config
   echo "DONE."
 }
 
