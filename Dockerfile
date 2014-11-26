@@ -5,4 +5,7 @@ RUN pip install boto
 RUN pip install awscli
 RUN pip install apache-libcloud
 
-CMD ["bash"]
+COPY init.sh /
+RUN chmod +x /init.sh
+
+ENTRYPOINT ["/init.sh"]
